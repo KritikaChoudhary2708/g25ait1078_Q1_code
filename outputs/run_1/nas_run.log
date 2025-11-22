@@ -1,0 +1,93 @@
+Using device: cpu
+Starting with 6 Population:
+[Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.0000)]
+
+
+============================================================
+Generation 1/3
+============================================================
+Evaluating architecture 1/6... Fitness: 0.1412, Accuracy: 0.1520
+Evaluating architecture 2/6... Fitness: 0.1929, Accuracy: 0.2140
+Evaluating architecture 3/6... Fitness: 0.3670, Accuracy: 0.3880
+Evaluating architecture 4/6... Fitness: 0.4605, Accuracy: 0.4620
+Evaluating architecture 5/6... Fitness: 0.4813, Accuracy: 0.5040
+Evaluating architecture 6/6... Fitness: 0.3820, Accuracy: 0.4240
+
+Sorting population in terms of fitness score (high -> low) ...
+Best in generation: Arch(conv=2, acc=0.5040)
+
+Best overall: Arch(conv=2, acc=0.5040)
+
+Performing roulette-wheel selection of total population: 6 ...
+Performing Crossover & Mutation ...
+Elitism: Keeping top 2 architectures in next generation.
+Next Generation: [Arch(conv=2, acc=0.5040), Arch(conv=2, acc=0.4620), Arch(conv=1, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000)]
+
+============================================================
+Generation 2/3
+============================================================
+Evaluating architecture 1/6... Fitness: 0.4933, Accuracy: 0.5160
+Evaluating architecture 2/6... Fitness: 0.4625, Accuracy: 0.4640
+Evaluating architecture 3/6... Fitness: 0.4207, Accuracy: 0.4260
+Evaluating architecture 4/6... Fitness: 0.4381, Accuracy: 0.4440
+Evaluating architecture 5/6... Fitness: 0.3780, Accuracy: 0.4200
+Evaluating architecture 6/6... Fitness: 0.3800, Accuracy: 0.4220
+
+Sorting population in terms of fitness score (high -> low) ...
+Best in generation: Arch(conv=2, acc=0.5160)
+
+Best overall: Arch(conv=2, acc=0.5160)
+
+Performing roulette-wheel selection of total population: 6 ...
+Performing Crossover & Mutation ...
+Elitism: Keeping top 2 architectures in next generation.
+Next Generation: [Arch(conv=2, acc=0.5160), Arch(conv=2, acc=0.4640), Arch(conv=1, acc=0.4260), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000)]
+
+============================================================
+Generation 3/3
+============================================================
+Evaluating architecture 1/6... Fitness: 0.4413, Accuracy: 0.4640
+Evaluating architecture 2/6... Fitness: 0.4585, Accuracy: 0.4600
+Evaluating architecture 3/6... Fitness: 0.4107, Accuracy: 0.4160
+Evaluating architecture 4/6... Fitness: 0.4474, Accuracy: 0.4500
+Evaluating architecture 5/6... Fitness: 0.1907, Accuracy: 0.1960
+Evaluating architecture 6/6... Fitness: 0.3980, Accuracy: 0.4400
+
+Sorting population in terms of fitness score (high -> low) ...
+Best in generation: Arch(conv=2, acc=0.4600)
+
+Best overall: Arch(conv=2, acc=0.5160)
+
+Performing roulette-wheel selection of total population: 6 ...
+Performing Crossover & Mutation ...
+Elitism: Keeping top 2 architectures in next generation.
+Next Generation: [Arch(conv=2, acc=0.4600), Arch(conv=1, acc=0.4500), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.4400), Arch(conv=2, acc=0.0000), Arch(conv=4, acc=0.0000)]
+
+============================================================
+FINAL BEST ARCHITECTURE
+============================================================
+Genes: {'num_conv': 2, 'conv_configs': [{'filters': 128, 'kernel_size': 5}, {'filters': 32, 'kernel_size': 5}], 'pool_type': 'avg', 'activation': 'relu', 'fc_units': 512}
+Accuracy: 0.5160
+Fitness: 0.4933
+
+Total parameters: 4,312,426
+
+Model architecture:
+CNN(
+  (features): Sequential(
+    (0): Conv2d(3, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): Conv2d(128, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): AvgPool2d(kernel_size=2, stride=2, padding=0)
+  )
+  (classifier): Sequential(
+    (0): Flatten(start_dim=1, end_dim=-1)
+    (1): Linear(in_features=8192, out_features=512, bias=True)
+    (2): ReLU(inplace=True)
+    (3): Dropout(p=0.5, inplace=False)
+    (4): Linear(in_features=512, out_features=10, bias=True)
+  )
+)
