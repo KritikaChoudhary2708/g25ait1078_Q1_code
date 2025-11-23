@@ -30,16 +30,16 @@ trainset = CIFAR10(root='./data', train=True, download=True, transform=transform
 valset = CIFAR10(root='./data', train=False, download=True, transform=transform)
 
 
-train_subset = Subset(trainset, range(3000)) #original train set size was 50000 but system was running slow so reduced it to 3000
-val_subset = Subset(valset, range(500)) #original val set size was 10000 but system was running slow so reduced it to 500
+train_subset = Subset(trainset, range(5000)) 
+val_subset = Subset(valset, range(10000))
 
-train_loader = DataLoader(train_subset, batch_size=512, shuffle=True) #original batch size was 128 but system was running slow so increased it to 512
-val_loader = DataLoader(val_subset, batch_size=512, shuffle=False) #original batch size was 128 but system was running slow so increased it to 512  
+train_loader = DataLoader(train_subset, batch_size=128, shuffle=True)
+val_loader = DataLoader(val_subset, batch_size=128, shuffle=False) 
 
 # Run NAS with GA
 ga = GeneticAlgorithm(
-    population_size=6,  # Reduced from 10 for faster runtime
-    generations=3,       # Reduced from 5 for faster runtime
+    population_size=10,  
+    generations=5,       
     mutation_rate=0.3,
     crossover_rate=0.7
 )

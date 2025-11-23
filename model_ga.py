@@ -63,16 +63,16 @@ class GeneticAlgorithm:
     def initialize_population(self):
         self.population = [Architecture() for _ in range(self.population_size)]
     
-    def evaluate_fitness(self, architecture, train_loader, val_loader, device, epochs=25): #original epoch size was 100 but system was running slow so reduced it to 25
+    def evaluate_fitness(self, architecture, train_loader, val_loader, device, epochs=100): 
         """Train and evaluate a single architecture"""
         try:
             model = CNN(architecture.genes).to(device)
             criterion = nn.CrossEntropyLoss()
-            optimizer = AdamW(model.parameters(), lr=0.002) #original learning rate was 0.001 but system was running slow so increased it to 0.002
+            optimizer = AdamW(model.parameters(), lr=0.001)
             
             # Quick training
             best_acc = 0
-            patience = 5 #original patience was 10 but system was running slow so reduced it to 5
+            patience = 10 
             step = 1
             best_epoch = 1
             for epoch in range(1, epochs+1):
