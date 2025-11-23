@@ -1,76 +1,136 @@
 Using device: cpu
-Starting with 6 Population:
-[Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.0000)]
+Starting with 10 Population:
+[Arch(conv=1, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=3, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=3, acc=0.0000)]
 
 
 ============================================================
-Generation 1/3
+Generation 1/5
 ============================================================
-Evaluating architecture 1/6... Fitness: 0.1412, Accuracy: 0.1520
-Evaluating architecture 2/6... Fitness: 0.1929, Accuracy: 0.2140
-Evaluating architecture 3/6... Fitness: 0.3670, Accuracy: 0.3880
-Evaluating architecture 4/6... Fitness: 0.4605, Accuracy: 0.4620
-Evaluating architecture 5/6... Fitness: 0.4813, Accuracy: 0.5040
-Evaluating architecture 6/6... Fitness: 0.3820, Accuracy: 0.4240
+Evaluating architecture 1/10... Fitness: 0.3854, Accuracy: 0.3960
+Evaluating architecture 2/10... Fitness: 0.6603, Accuracy: 0.6660
+Evaluating architecture 3/10... Fitness: 0.6752, Accuracy: 0.6860
+Evaluating architecture 4/10... Fitness: 0.6341, Accuracy: 0.6360
+Evaluating architecture 5/10... Fitness: 0.5525, Accuracy: 0.5630
+Evaluating architecture 6/10... Fitness: 0.6332, Accuracy: 0.6390
+Evaluating architecture 7/10... Fitness: 0.5658, Accuracy: 0.5870
+Evaluating architecture 8/10... Fitness: 0.5185, Accuracy: 0.5330
+Evaluating architecture 9/10... Fitness: 0.3361, Accuracy: 0.5040
+Evaluating architecture 10/10... Fitness: 0.6371, Accuracy: 0.6390
 
 Sorting population in terms of fitness score (high -> low) ...
-Best in generation: Arch(conv=2, acc=0.5040)
+Best in generation: Arch(conv=4, acc=0.6860)
 
-Best overall: Arch(conv=2, acc=0.5040)
+Best overall: Arch(conv=4, acc=0.6860)
 
-Performing roulette-wheel selection of total population: 6 ...
+Performing roulette-wheel (fitness-proportional) selection of total population: 10 ...
 Performing Crossover & Mutation ...
 Elitism: Keeping top 2 architectures in next generation.
-Next Generation: [Arch(conv=2, acc=0.5040), Arch(conv=2, acc=0.4620), Arch(conv=1, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000)]
+Next Generation: [Arch(conv=4, acc=0.6860), Arch(conv=4, acc=0.6660), Arch(conv=1, acc=0.3960), Arch(conv=1, acc=0.3960), Arch(conv=4, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=3, acc=0.0000), Arch(conv=2, acc=0.0000)]
 
 ============================================================
-Generation 2/3
+Generation 2/5
 ============================================================
-Evaluating architecture 1/6... Fitness: 0.4933, Accuracy: 0.5160
-Evaluating architecture 2/6... Fitness: 0.4625, Accuracy: 0.4640
-Evaluating architecture 3/6... Fitness: 0.4207, Accuracy: 0.4260
-Evaluating architecture 4/6... Fitness: 0.4381, Accuracy: 0.4440
-Evaluating architecture 5/6... Fitness: 0.3780, Accuracy: 0.4200
-Evaluating architecture 6/6... Fitness: 0.3800, Accuracy: 0.4220
+Evaluating architecture 1/10... Fitness: 0.6362, Accuracy: 0.6470
+Evaluating architecture 2/10... Fitness: 0.6803, Accuracy: 0.6860
+Evaluating architecture 3/10... Fitness: 0.5404, Accuracy: 0.5510
+Evaluating architecture 4/10... Fitness: 0.4924, Accuracy: 0.5030
+Evaluating architecture 5/10... Fitness: 0.5929, Accuracy: 0.6040
+Evaluating architecture 6/10... Fitness: 0.2764, Accuracy: 0.2990
+Evaluating architecture 7/10... Fitness: 0.5635, Accuracy: 0.5780
+Evaluating architecture 8/10... Fitness: 0.6532, Accuracy: 0.6640
+Evaluating architecture 9/10... Fitness: 0.6211, Accuracy: 0.6320
+Evaluating architecture 10/10... Fitness: 0.3464, Accuracy: 0.3690
 
 Sorting population in terms of fitness score (high -> low) ...
-Best in generation: Arch(conv=2, acc=0.5160)
+Best in generation: Arch(conv=4, acc=0.6860)
 
-Best overall: Arch(conv=2, acc=0.5160)
+Best overall: Arch(conv=4, acc=0.6860)
 
-Performing roulette-wheel selection of total population: 6 ...
+Performing roulette-wheel (fitness-proportional) selection of total population: 10 ...
 Performing Crossover & Mutation ...
 Elitism: Keeping top 2 architectures in next generation.
-Next Generation: [Arch(conv=2, acc=0.5160), Arch(conv=2, acc=0.4640), Arch(conv=1, acc=0.4260), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000), Arch(conv=1, acc=0.0000)]
+Next Generation: [Arch(conv=4, acc=0.6860), Arch(conv=4, acc=0.6640), Arch(conv=4, acc=0.6470), Arch(conv=4, acc=0.6860), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000)]
 
 ============================================================
-Generation 3/3
+Generation 3/5
 ============================================================
-Evaluating architecture 1/6... Fitness: 0.4413, Accuracy: 0.4640
-Evaluating architecture 2/6... Fitness: 0.4585, Accuracy: 0.4600
-Evaluating architecture 3/6... Fitness: 0.4107, Accuracy: 0.4160
-Evaluating architecture 4/6... Fitness: 0.4474, Accuracy: 0.4500
-Evaluating architecture 5/6... Fitness: 0.1907, Accuracy: 0.1960
-Evaluating architecture 6/6... Fitness: 0.3980, Accuracy: 0.4400
+Evaluating architecture 1/10... Fitness: 0.6643, Accuracy: 0.6700
+Evaluating architecture 2/10... Fitness: 0.6752, Accuracy: 0.6860
+Evaluating architecture 3/10... Fitness: 0.6272, Accuracy: 0.6380
+Evaluating architecture 4/10... Fitness: 0.6573, Accuracy: 0.6630
+Evaluating architecture 5/10... Fitness: 0.6732, Accuracy: 0.6840
+Evaluating architecture 6/10... Fitness: 0.6532, Accuracy: 0.6640
+Evaluating architecture 7/10... Fitness: 0.6462, Accuracy: 0.6570
+Evaluating architecture 8/10... Fitness: 0.6346, Accuracy: 0.6480
+Evaluating architecture 9/10... Fitness: 0.6572, Accuracy: 0.6680
+Evaluating architecture 10/10... Fitness: 0.6573, Accuracy: 0.6630
 
 Sorting population in terms of fitness score (high -> low) ...
-Best in generation: Arch(conv=2, acc=0.4600)
+Best in generation: Arch(conv=4, acc=0.6860)
 
-Best overall: Arch(conv=2, acc=0.5160)
+Best overall: Arch(conv=4, acc=0.6860)
 
-Performing roulette-wheel selection of total population: 6 ...
+Performing roulette-wheel (fitness-proportional) selection of total population: 10 ...
 Performing Crossover & Mutation ...
 Elitism: Keeping top 2 architectures in next generation.
-Next Generation: [Arch(conv=2, acc=0.4600), Arch(conv=1, acc=0.4500), Arch(conv=2, acc=0.0000), Arch(conv=1, acc=0.4400), Arch(conv=2, acc=0.0000), Arch(conv=4, acc=0.0000)]
+Next Generation: [Arch(conv=4, acc=0.6860), Arch(conv=4, acc=0.6840), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.6860), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=2, acc=0.0000)]
+
+============================================================
+Generation 4/5
+============================================================
+Evaluating architecture 1/10... Fitness: 0.6442, Accuracy: 0.6550
+Evaluating architecture 2/10... Fitness: 0.6622, Accuracy: 0.6730
+Evaluating architecture 3/10... Fitness: 0.6463, Accuracy: 0.6520
+Evaluating architecture 4/10... Fitness: 0.6583, Accuracy: 0.6640
+Evaluating architecture 5/10... Fitness: 0.6400, Accuracy: 0.6500
+Evaluating architecture 6/10... Fitness: 0.6342, Accuracy: 0.6450
+Evaluating architecture 7/10... Fitness: 0.6446, Accuracy: 0.6580
+Evaluating architecture 8/10... Fitness: 0.6862, Accuracy: 0.6970
+Evaluating architecture 9/10... Fitness: 0.6672, Accuracy: 0.6780
+Evaluating architecture 10/10... Fitness: 0.3244, Accuracy: 0.3470
+
+Sorting population in terms of fitness score (high -> low) ...
+Best in generation: Arch(conv=4, acc=0.6970)
+
+Best overall: Arch(conv=4, acc=0.6970)
+
+Performing roulette-wheel (fitness-proportional) selection of total population: 10 ...
+Performing Crossover & Mutation ...
+Elitism: Keeping top 2 architectures in next generation.
+Next Generation: [Arch(conv=4, acc=0.6970), Arch(conv=4, acc=0.6780), Arch(conv=2, acc=0.0000), Arch(conv=4, acc=0.6580), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000)]
+
+============================================================
+Generation 5/5
+============================================================
+Evaluating architecture 1/10... Fitness: 0.6672, Accuracy: 0.6780
+Evaluating architecture 2/10... Fitness: 0.6682, Accuracy: 0.6790
+Evaluating architecture 3/10... Fitness: 0.5719, Accuracy: 0.5950
+Evaluating architecture 4/10... Fitness: 0.6586, Accuracy: 0.6720
+Evaluating architecture 5/10... Fitness: 0.6742, Accuracy: 0.6850
+Evaluating architecture 6/10... Fitness: 0.6746, Accuracy: 0.6880
+Evaluating architecture 7/10... Fitness: 0.6636, Accuracy: 0.6770
+Evaluating architecture 8/10... Fitness: 0.6493, Accuracy: 0.6550
+Evaluating architecture 9/10... Fitness: 0.6496, Accuracy: 0.6630
+Evaluating architecture 10/10... Fitness: 0.6490, Accuracy: 0.6590
+
+Sorting population in terms of fitness score (high -> low) ...
+Best in generation: Arch(conv=4, acc=0.6880)
+
+Best overall: Arch(conv=4, acc=0.6970)
+
+Performing roulette-wheel (fitness-proportional) selection of total population: 10 ...
+Performing Crossover & Mutation ...
+Elitism: Keeping top 2 architectures in next generation.
+Next Generation: [Arch(conv=4, acc=0.6880), Arch(conv=4, acc=0.6850), Arch(conv=2, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=2, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.6550), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000), Arch(conv=4, acc=0.0000)]
 
 ============================================================
 FINAL BEST ARCHITECTURE
 ============================================================
-Genes: {'num_conv': 2, 'conv_configs': [{'filters': 128, 'kernel_size': 5}, {'filters': 32, 'kernel_size': 5}], 'pool_type': 'avg', 'activation': 'relu', 'fc_units': 512}
-Accuracy: 0.5160
-Fitness: 0.4933
+Genes: {'num_conv': 4, 'conv_configs': [{'filters': 128, 'kernel_size': 5}, {'filters': 128, 'kernel_size': 3}, {'filters': 128, 'kernel_size': 7}, {'filters': 16, 'kernel_size': 5}], 'pool_type': 'max', 'activation': 'relu', 'fc_units': 64}
+Accuracy: 0.6970
+Fitness: 0.6862
 
-Total parameters: 4,312,426
+Total parameters: 1,078,522
 
 Model architecture:
 CNN(
@@ -78,16 +138,23 @@ CNN(
     (0): Conv2d(3, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
     (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
     (2): ReLU(inplace=True)
-    (3): Conv2d(128, 32, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
-    (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (4): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
     (5): ReLU(inplace=True)
-    (6): AvgPool2d(kernel_size=2, stride=2, padding=0)
+    (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (7): Conv2d(128, 128, kernel_size=(7, 7), stride=(1, 1), padding=(3, 3))
+    (8): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (9): ReLU(inplace=True)
+    (10): Conv2d(128, 16, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+    (11): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (12): ReLU(inplace=True)
+    (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
   )
   (classifier): Sequential(
     (0): Flatten(start_dim=1, end_dim=-1)
-    (1): Linear(in_features=8192, out_features=512, bias=True)
+    (1): Linear(in_features=1024, out_features=64, bias=True)
     (2): ReLU(inplace=True)
     (3): Dropout(p=0.5, inplace=False)
-    (4): Linear(in_features=512, out_features=10, bias=True)
+    (4): Linear(in_features=64, out_features=10, bias=True)
   )
 )
